@@ -3,7 +3,6 @@ def get_str
 end
 
 def frequencies
-  puts
   puts "Enter a string: "
   words = get_str.split
   puts "Counting word frequency....."
@@ -16,7 +15,6 @@ def frequencies
 end
 
 def sort
-  puts
   puts "Enter words you would like to sort, seperated by comma."
   words = get_str.gsub!(/ /, '').split(',') # Removes spaces and splits.
   puts 'Sorting words.....'
@@ -26,7 +24,6 @@ def sort
 end
 
 def start
-  puts
   puts "Would you like to get word FREQUENCY,"
   puts "SORT a list of words alphabetically,"
   puts "or EXIT the program?"
