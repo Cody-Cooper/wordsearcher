@@ -8,7 +8,7 @@ def frequencies
   puts "Counting word frequency....."
   frequencies = Hash.new(0)
   words.each { |word| frequencies[word] += 1 }
-  # Sorts by word frequency and reverses it, so highest frequency is at the top.
+  # Sorts by word frequency and reverses it, so highest frequency is first.
   frequencies = frequencies.sort_by { |word, frequency| frequency }.reverse!
   frequencies.each { |word, frequency| puts word + ' ' + frequency.to_s }
   start
