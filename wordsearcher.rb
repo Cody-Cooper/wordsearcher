@@ -28,7 +28,6 @@ def start
   puts "SORT a list of words alphabetically,"
   puts "or EXIT the program?"
   user_input = gets.chomp
-
   if user_input.downcase == "frequency"
    frequencies
   elsif user_input.downcase == "sort"
